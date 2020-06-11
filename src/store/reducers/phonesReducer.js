@@ -2,6 +2,6 @@ const initialState = {
     phones: []
 }
 
-export default (state = initialState, action) => {
+export const phones = (state = initialState, action) => {
     return state
 }
