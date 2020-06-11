@@ -1,7 +1,23 @@
-const initialState = {
-    phones: []
-}
+import { FETCH_PHONES_START, FETCH_PHONES_SUCCESS, FETCH_PHONES_FAILURE } from '../types'
 
-export const phones = (state = initialState, action) => {
-    return state
+const initialState = {}
+
+export const phones = (state = initialState, {type, payload}) => {
+    switch (type) {
+        case FETCH_PHONES_START:
+            return {
+                ...state
+            }
+        case FETCH_PHONES_SUCCESS:
+            return {
+                ...state,
+                payload
+            }
+        case FETCH_PHONES_FAILURE:
+            return {
+                ...state
+            }
+        default:
+            return state
+    }   
 }
