@@ -1,7 +1,7 @@
 import React from 'react'
 import {Switch, Route} from 'react-router'
 
-import Phones from '../pages/phones'
+import Phones from '../../pages/phones'
 
 const routes = (
     <Switch>
