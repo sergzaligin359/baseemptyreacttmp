@@ -1,1 +1,1 @@
-export * from './phonesReducer'
+export * from './phones'

@@ -11,7 +11,7 @@ export const phones = (state = initialState, {type, payload}) => {
         case FETCH_PHONES_SUCCESS:
             return {
                 ...state,
-                payload
+                phones: payload
             }
         case FETCH_PHONES_FAILURE:
             return {

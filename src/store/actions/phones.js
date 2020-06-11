@@ -1,6 +1,6 @@
 import { FETCH_PHONES_START, FETCH_PHONES_SUCCESS, FETCH_PHONES_FAILURE } from '../types'
 
-import {fetchPhones as fetchPhonesApi} from '../api'
+import {fetchPhones as fetchPhonesApi} from '../../api'
 
 export const fetchPhones = () => async dispatch => {
     dispatch({

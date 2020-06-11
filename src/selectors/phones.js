@@ -1,5 +1,8 @@
 export const getPhones = state => {
-    return []
+    return {
+        ...state.phones,
+        error: false
+    }
 }
 
 export const getPhoneById = (state, id) => {
