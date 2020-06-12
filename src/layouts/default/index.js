@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { routes } from '../../routes/default'
-
-export default () => {
-    return <div>{ routes }</div>
+export default ({ children }) => {
+    return (
+        <div className="default-layout">{ children }</div>
+    )
 }

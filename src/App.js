@@ -1,10 +1,11 @@
 import React from 'react'
-import Layout from './layouts/default'
+
+import { routes } from './routes'
 
 export default () => {
     return (
         <>
-            <Layout />
+            {routes}
         </>
     )
 }
